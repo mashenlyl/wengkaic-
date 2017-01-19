@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+class A
+{
+public:
+	int a;
+	int b;
+	void f();
+};
+
+void A::f()
+{
+	printf("&a = %p\n", &a);
+	printf("&b = %p\n", &b);
+	printf("this = %p\n", this);
+}
+
+int main(void)
+{
+	A i;
+	printf("i = %p\n", &i);
+	//printf("%p\n", a.f());
+
+	return 0;
+}
+

@@ -1,0 +1,7 @@
+14:58:58 **** Incremental Build of configuration Debug for project 15.inherti ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o inherti.o "..\\inherti.cpp" 
+g++ -o 15.inherti.exe inherti.o 
+
+14:58:59 Build Finished (took 729ms)
+

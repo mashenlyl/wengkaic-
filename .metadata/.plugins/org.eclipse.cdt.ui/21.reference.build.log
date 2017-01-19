@@ -1,0 +1,28 @@
+10:28:59 **** Incremental Build of configuration Debug for project 21.reference ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o reference.o "..\\reference.cpp" 
+..\reference.cpp: In function 'int main()':
+..\reference.cpp:31:11: error: declaration of 'ff' as array of references
+  int &ff[3];
+           ^
+..\reference.cpp:32:9: error: cannot declare pointer to 'int&'
+  int &* p;
+         ^
+..\reference.cpp:44:8: error: call of overloaded 'func(int&)' is ambiguous
+  func(s);
+        ^
+..\reference.cpp:23:6: note: candidate: void func(int&)
+ void func(int &c){}
+      ^
+..\reference.cpp:24:6: note: candidate: void func(int)
+ void func(int c){}
+      ^
+..\reference.cpp:32:9: warning: unused variable 'p' [-Wunused-variable]
+  int &* p;
+         ^
+..\reference.cpp:33:9: warning: unused variable 'p1' [-Wunused-variable]
+  int *& p1 = x1;  // 有指针类型的引用
+         ^
+
+10:28:59 Build Finished (took 189ms)
+

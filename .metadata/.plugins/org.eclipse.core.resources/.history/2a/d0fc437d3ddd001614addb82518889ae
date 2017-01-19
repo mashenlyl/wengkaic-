@@ -1,0 +1,26 @@
+/*
+ * reference.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ18ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+
+int &func()
+{
+	int i = 10;
+	return i;
+}
+
+int main()
+{
+	int j;
+	j = func();
+	cout << "j = " << j << endl;
+
+
+	return 0;
+}
+
+
+

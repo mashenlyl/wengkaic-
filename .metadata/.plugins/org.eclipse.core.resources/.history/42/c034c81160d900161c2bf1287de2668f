@@ -1,0 +1,17 @@
+/*
+ * TicketMachine.h
+ *
+ *  Created on: 2017Äê1ÔÂ13ÈÕ
+ *      Author: LYL
+ */
+
+#ifndef TICKETMACHINE_H_
+#define TICKETMACHINE_H_
+
+class TicketMachine {
+public:
+	TicketMachine();
+	virtual ~TicketMachine();
+};
+
+#endif /* TICKETMACHINE_H_ */

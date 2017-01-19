@@ -1,0 +1,30 @@
+/*
+ * composition.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ15ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class Person
+{
+public:
+
+};
+
+class SavingAccout
+{
+public:
+	SavingAccout();
+};
+
+int main()
+{
+
+
+	return 0;
+}
+
+

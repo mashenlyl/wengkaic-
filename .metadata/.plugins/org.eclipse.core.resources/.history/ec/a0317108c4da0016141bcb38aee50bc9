@@ -1,0 +1,42 @@
+/*
+ * initial_list.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ15ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class B
+{
+private:
+	int a;
+public:
+	B(int);
+	~B();
+};
+
+class A
+{
+private:
+	int a;
+	int b;
+	B c;
+public:
+	A();
+};
+
+B::B(int a)
+{
+	this->a = a;
+}
+
+int main()
+{
+	A a;
+
+	return 0;
+}
+
+

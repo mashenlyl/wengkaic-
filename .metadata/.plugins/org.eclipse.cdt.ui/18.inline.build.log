@@ -1,0 +1,9 @@
+17:40:56 **** Incremental Build of configuration Debug for project 18.inline ****
+Info: Internal Builder is used for build
+g++ -o 18.inline.exe a.o inline.o 
+inline.o: In function `main':
+F:\wengkaic++\18.inline\Debug/../inline.cpp:12: undefined reference to `f(int, int)'
+collect2.exe: error: ld returned 1 exit status
+
+17:40:56 Build Finished (took 287ms)
+

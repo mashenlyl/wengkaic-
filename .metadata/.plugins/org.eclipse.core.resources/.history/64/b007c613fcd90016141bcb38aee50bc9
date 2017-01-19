@@ -1,0 +1,28 @@
+/*
+ * new.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ14ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	void f();
+	void print();
+private:
+	int i;
+	int j;
+}
+
+int main()
+{
+
+
+	return 0;
+}
+
+

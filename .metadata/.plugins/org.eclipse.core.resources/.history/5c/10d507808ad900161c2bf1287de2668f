@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+class A
+{
+public:
+	int a;
+	int b;
+	void f();
+};
+
+void A::f()
+{
+	printf("&a = %p\n", &a);
+	printf("&b = %p\n", &b);
+}
+
+int main(void)
+{
+	A i;
+	printf("i = %p\n", &i);
+
+	return 0;
+}
+

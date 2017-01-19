@@ -1,0 +1,46 @@
+/*
+ * Point3d.cpp
+ *
+ *  Created on: 2017年1月13日
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class Point3d
+{
+public:
+	// 定义的同时对类进行初始化
+	Point3d(float a, float b, float c);
+	// 类的服务
+	void print();
+
+//这个类有三个数据
+private:
+	float x;
+	float y;
+	float z;
+};
+
+// 成员函数在类外的定义方式
+void Point3d::print(void)
+{
+	cout << "x = " << x << " y = " << y << " z = " << z <<endl;
+}
+
+Point3d::Point3d(float a, float b, float c)
+{
+	x = a;
+	y = b;
+	z = c;
+}
+/*
+int main()
+{
+	Point3d a(1, 2, 3);
+	a.print();
+}
+*/
+
+
+

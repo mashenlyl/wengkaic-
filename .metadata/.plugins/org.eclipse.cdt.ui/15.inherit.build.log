@@ -1,0 +1,15 @@
+13:18:11 **** Incremental Build of configuration Debug for project 15.inherit ****
+make all 
+Building file: ../inherit.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inherit.d" -MT"inherit.o" -o "inherit.o" "../inherit.cpp"
+Finished building: ../inherit.cpp
+ 
+Building target: 15.inherit
+Invoking: Cross G++ Linker
+g++  -o "15.inherit"  ./inherit.o   
+Finished building target: 15.inherit
+ 
+
+13:18:11 Build Finished (took 681ms)
+

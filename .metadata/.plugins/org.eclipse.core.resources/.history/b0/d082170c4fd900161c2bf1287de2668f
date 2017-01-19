@@ -1,0 +1,35 @@
+/*
+ * Pointc.c
+ *
+ *  Created on: 2017年1月13日
+ *      Author: LYL
+ */
+#include <stdio.h>
+
+// 漏了typedef
+typedef struct Point3d
+{
+	float x;
+	float y;
+	float z;
+}Pointed;
+
+void print(Pointed *a)
+{
+	printf("x = %f\n", a->x);
+	printf("x = %f\n", a->y);
+	printf("x = %f\n", a->z);
+}
+
+int main(void)
+{
+	Pointed a;
+	a.x = 10;
+	a.y = 20;
+	a.z = 30;
+	print(&a);
+	return 0;
+}
+
+
+

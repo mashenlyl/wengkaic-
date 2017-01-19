@@ -1,0 +1,18 @@
+/*
+ * constructor.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ14ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+
+
+	return 0;
+}
+
+

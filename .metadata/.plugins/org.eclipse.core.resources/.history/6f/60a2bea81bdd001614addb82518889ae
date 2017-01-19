@@ -1,0 +1,66 @@
+/*
+ * vitual.cpp
+ *
+ *  Created on: 2017年1月16日
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class Shape
+{
+public:
+	void move(){ cout << "Shape::move()" << endl;};
+	virtual void render(){ cout << "Shape::render()" << endl; };
+	// 如果下面的子类没有render（int a）的话，这函数就被隐藏了
+	virtual void lender(int a){ cout << "Shape::render(int)" << endl; }
+	virtual ~Shape(){};
+private:
+	int center;
+};
+
+class Rectangle:public Shape
+{
+public:
+	virtual void render(){ cout << "Rectangle::render()" << endl; };
+};
+
+class Ellipse:public Shape
+{
+public:
+	// 这里后面没有加上大括号，就只是在这里是声明，并没有定义这个构造函数
+	Ellipse(float maj, float minr){};
+	virtual void render(int a){ cout << "Ellipse::render(int a)" << endl; };
+	//virtual void render(int a){ cout << "Ellipse::render(int)" << endl; }
+	virtual ~Ellipse(){};
+};
+
+class Circle:public Ellipse
+{
+public:
+	Circle(float radiums):Ellipse(radiums, radiums){};
+	virtual void render(){ cout << "Circle::render()" << endl; };
+	//virtual void render(int a){ cout << "Circle::render(int)" << endl; }
+};
+
+void render(Shape* p)
+{
+	p->render();
+	p->lender(2);
+	p->move();
+}
+int main()
+{
+	Shape S;
+	cout << sizeof(S) << endl;
+	Ellipse ell(10,20);
+	ell.render();
+	Circle circ(13);
+	circ.render();
+	render(&ell);
+	render(&circ);
+
+	return 0;
+}
+
+

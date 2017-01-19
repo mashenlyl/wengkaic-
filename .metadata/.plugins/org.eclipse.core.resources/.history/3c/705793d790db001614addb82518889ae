@@ -1,0 +1,36 @@
+/*
+ * reference.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ16ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	A(int x):a(x){ cout << "A::A()" << endl;};
+	void set(){ a = 200; cout << a << endl; };
+private:
+	int &a;
+
+};
+
+void func(int &c)
+{
+
+}
+
+int main()
+{
+	int s = 10;
+	A a(s);
+	func(s*3);
+	a.set();
+	cout << s << endl;
+
+	return 0;
+}
+
+

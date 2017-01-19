@@ -1,0 +1,53 @@
+/*
+ * upcasting.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ16ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class Person
+{
+public:
+	Person(int h, int y):height(h),year(y){}
+	void print(int a){ cout << "Person::print(int a)" << endl; }
+	void print(){ cout << "Person::print" << endl; }
+private:
+	int height;
+	int year;
+};
+
+class Student:public Person
+{
+public:
+	Student():Person(20, 30),grade(100){}
+	void print(){ cout << "Student::print" << endl; };
+private:
+	int grade;
+};
+
+int main()
+{
+	Student p;
+	int *p1 = (int)&p;
+	cout << p1 << endl;
+	cout << *p1 << endl;
+	p1++;
+	cout << *p1 << endl;
+
+/*
+	Student p;
+	Person s2 = p;
+	Person *s = &p;
+	Person &s1 = p;
+
+	s2.print(10);
+	s1.print();
+	s->print();
+*/
+	return 0;
+}
+
+
+

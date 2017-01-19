@@ -1,0 +1,30 @@
+/*
+ * reference.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ18ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+int a;
+
+int &func(int t)
+{
+	a = t;
+	return t;
+}
+
+int main()
+{
+	int j = 0;
+	// j = func();
+	func() = 3;
+	cout << "j = " << j << endl;
+
+
+	return 0;
+}
+
+
+

@@ -1,0 +1,40 @@
+/*
+ * inherit.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ15ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	A(int):i(2){ cout << "A::A" << endl; };
+	~A(){ cout << "A£º£º~A" << endl;};
+	void print() { cout << "A::print " << i << endl; };
+protected:
+	void set(int a) { i=a; };
+private:
+	int i;
+};
+
+class B: public A
+{
+private:
+public:
+	void f();
+	B(int):A(1){ cout << "B::B" << endl; };
+};
+
+int main()
+{
+	B c(1);
+	//c.set(23);
+	c.print();
+
+	return 0;
+}
+
+

@@ -1,0 +1,32 @@
+/*
+ * private.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ14ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+private:
+	int a;
+public:
+	A(int a){ this->a = a; };
+	void f(A *p){ p->a = 10;};
+	int print(){ return this->a; }
+};
+
+int main()
+{
+	A a(100);
+	A b(30);
+	a.f(&b);
+	cout << "a.a" << a.a << endl;
+	cout << "b.a" << b.a << endl;
+
+	return 0;
+}
+
+

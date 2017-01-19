@@ -1,0 +1,36 @@
+/*
+ * constructor.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ14ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	A(int);
+	int a;
+};
+
+A::A(int i)
+{
+	a = i;
+	cout << "A::A()" << a << endl;
+}
+
+int main(void)
+{
+	A a(1);
+	//goto jump1;
+	A aa(3);
+
+	jump1:
+		cout<<"jump1"<<endl;
+
+	return 0;
+}
+
+

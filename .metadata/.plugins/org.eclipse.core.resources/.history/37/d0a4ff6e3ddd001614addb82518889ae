@@ -1,0 +1,24 @@
+/*
+ * reference.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ18ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+
+int &func()
+{
+	int i = 10;
+	return i;
+}
+
+int main()
+{
+
+
+
+	return 0;
+}
+
+
+

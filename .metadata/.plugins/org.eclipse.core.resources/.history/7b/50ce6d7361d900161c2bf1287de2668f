@@ -1,0 +1,17 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ13ÈÕ
+ *      Author: LYL
+ */
+#include "TicketMachine.h"
+
+int main(void)
+{
+
+
+	return 0;
+}
+
+
+

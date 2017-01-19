@@ -1,0 +1,25 @@
+/*
+ * constructor.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ13ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	A();
+	~A();
+}
+
+int main()
+{
+
+
+	return 0;
+}
+
+

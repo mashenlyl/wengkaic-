@@ -1,0 +1,28 @@
+/*
+ * upcasting.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ16ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class Person
+{
+
+};
+
+class Student:public Person
+{
+
+};
+
+int main()
+{
+
+
+	return 0;
+}
+
+
+

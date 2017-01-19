@@ -1,0 +1,33 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ13ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	int i;
+	void print();
+};
+
+void A::print()
+{
+	i = 20;
+	cout << i << endl;
+}
+
+int main()
+{
+	A a;
+	A b;
+	cout << "a.f() " << a.f() << endl;
+
+	return 0;
+}
+
+

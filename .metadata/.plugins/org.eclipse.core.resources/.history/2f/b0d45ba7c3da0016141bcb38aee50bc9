@@ -1,0 +1,25 @@
+/*
+ * initial_list.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ15ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	A();
+	~A();
+}
+
+int main()
+{
+
+
+	return 0;
+}
+
+

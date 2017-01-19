@@ -1,0 +1,27 @@
+/*
+ * const.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ15ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	void set const (int b){ a = b;}
+private:
+	int a;
+};
+
+int main()
+{
+	A a;
+	a.set(1);
+
+	return 0;
+}
+
+
+

@@ -1,0 +1,38 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ13ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	int i;
+	void f();
+};
+
+void A::f()
+{
+	i = 20;
+	cout << i << endl;
+}
+
+int main()
+{
+	void *p1(void);
+	void *p2(void);
+	A a;
+	A b;
+	p1 = a.f();
+	p2 = b.f();
+	cout << "a.f() " << p1 << endl;
+	cout << "a.f() " << p2 << endl;
+
+	return 0;
+}
+
+

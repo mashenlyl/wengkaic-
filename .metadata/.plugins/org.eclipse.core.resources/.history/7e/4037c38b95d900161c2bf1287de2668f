@@ -1,0 +1,37 @@
+/*
+ * constructor.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ13ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	A(int);
+	~A();
+	int i;
+};
+
+A::A(int a)
+{
+	i = a;
+	cout << i << endl;
+}
+
+A::~A()
+{
+	cout << i << endl;
+}
+
+int main()
+{
+
+
+	return 0;
+}
+
+

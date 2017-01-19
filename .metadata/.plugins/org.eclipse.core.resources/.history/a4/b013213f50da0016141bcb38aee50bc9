@@ -1,0 +1,29 @@
+/*
+ * private.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ14ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+private:
+	int a;
+public:
+	A(int a){ this->a = a; };
+	void print(A *p){ p->a = 10;};
+};
+
+int main()
+{
+	A a;
+	A b;
+
+
+	return 0;
+}
+
+

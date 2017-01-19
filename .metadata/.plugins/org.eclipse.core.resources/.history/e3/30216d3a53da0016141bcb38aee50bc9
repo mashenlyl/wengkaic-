@@ -1,0 +1,48 @@
+/*
+ * private.cpp
+ *
+ *  Created on: 2017年1月14日
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+// 先在这里声明一下，告诉编译器有这么一个类叫A，然后在后面再进行定义；
+class A;
+
+class B
+{
+public:
+	void f(A *p){ p->a = 10;};
+};
+
+class A
+{
+private:
+	int a;
+public:
+	A(int a){ this->a = a; };
+	void f(A *p){ p->a = 10;};
+	int print(){ return this->a; }
+	friend B;
+	friend h();
+};
+
+void h()
+{
+	cout << "h()" << endl;
+}
+
+int main()
+{
+	A a(100);
+	A b(30);
+	a.f(&b);
+	cout << "a.a" << a.print() << endl;
+	cout << "b.a" << b.print() << endl;
+
+	return 0;
+}
+
+

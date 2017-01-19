@@ -1,0 +1,60 @@
+/*
+ * new.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ14ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	A();
+	void set(int);
+	~A();
+	void f();
+private:
+	int i;
+	int *p;
+};
+
+A::A()
+{
+	p = NULL;
+	cout << "A::A()" << endl;
+}
+
+A::~A()
+{
+	delete p;
+	cout << "A::~A(), i = " << this->i << endl;
+}
+
+void A::set(int i)
+{
+	this->i = i;
+}
+
+void A::f()
+{
+	p = new int;
+}
+
+int main()
+{
+	int i;
+	A *p = NULL;
+	p = new A[5];
+	for(i=0; i<5; i++)
+	{
+		p[i].set(i);
+	}
+
+	delete []p;
+
+	return 0;
+}
+
+

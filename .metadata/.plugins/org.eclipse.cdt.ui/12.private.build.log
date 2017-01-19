@@ -1,0 +1,7 @@
+20:20:06 **** Incremental Build of configuration Debug for project 12.private ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o private.o "..\\private.cpp" 
+g++ -o 12.private.exe private.o 
+
+20:20:07 Build Finished (took 605ms)
+

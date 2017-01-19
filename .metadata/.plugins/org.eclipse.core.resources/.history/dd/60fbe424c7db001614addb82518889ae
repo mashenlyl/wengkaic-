@@ -1,0 +1,44 @@
+/*
+ * vitual.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ16ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class Shape
+{
+public:
+	void move();
+	virtual void render();
+	virtual ~Shape();
+private:
+	int center;
+};
+
+class Rectangle:public Shape
+{
+public:
+	virtual void render();
+};
+
+class Ellipse:public Shape
+{
+public:
+	Ellipse(float maj, float minr);
+	virtual void render();
+};
+
+void render(Shape* p)
+{
+	p->render();
+}
+
+int main()
+{
+
+	return 0;
+}
+
+

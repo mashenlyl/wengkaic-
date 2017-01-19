@@ -1,0 +1,12 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:10.constructor.exe,org.eclipse.launchbar.core.descriptorType.default\:2.Point3d.exe,org.eclipse.launchbar.core.descriptorType.default\:hellow.exe,org.eclipse.launchbar.core.descriptorType.default\:helloc Debug (1),org.eclipse.launchbar.core.descriptorType.default\:helloc Debug (2),org.eclipse.launchbar.core.descriptorType.default\:helloc Debug,org.eclipse.launchbar.core.descriptorType.default\:helloc.exe,org.eclipse.launchbar.core.descriptorType.default\:4.ticketmachine.exe,org.eclipse.launchbar.core.descriptorType.default\:8.Field.exe,org.eclipse.launchbar.core.descriptorType.default\:9.constructor.exe,org.eclipse.launchbar.core.descriptorType.default\:13.initial_list.exe,org.eclipse.launchbar.core.descriptorType.default\:11.newdelete.exe,org.eclipse.launchbar.core.descriptorType.default\:15.inherti.exe,org.eclipse.launchbar.core.descriptorType.default\:16.relationship.exe,org.eclipse.launchbar.core.descriptorType.default\:19.const.exe,org.eclipse.launchbar.core.descriptorType.default\:20.const_class.exe,org.eclipse.launchbar.core.descriptorType.default\:21.reference.exe,org.eclipse.launchbar.core.descriptorType.default\:22.upcasting.exe,org.eclipse.launchbar.core.descriptorType.default\:23.vitual.exe,org.eclipse.launchbar.core.descriptorType.default\:25.reference.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:10.constructor.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:10.constructor.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:2.Point3d.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:2.Point3d.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:helloc\ Debug\ (1)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:helloc\ Debug\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:helloc\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:helloc\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

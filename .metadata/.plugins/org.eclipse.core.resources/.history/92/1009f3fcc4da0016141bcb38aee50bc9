@@ -1,0 +1,42 @@
+/*
+ * initial_list.cpp
+ *
+ *  Created on: 2017年1月15日
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class B
+{
+private:
+	int a;
+public:
+	B(int);
+};
+
+class A
+{
+private:
+	int a;
+	B c;
+public:
+	// 对应对象的初始化就必须使用初始化列表了，初始化列表的调用是在构造函数调用之前进行的
+	A(B d, int v):c(d),a(v){};
+};
+
+B::B(int a)
+{
+	this->a = a;
+}
+
+int main()
+{
+	B s(2);
+	A a(s, 2);
+
+	return 0;
+}
+
+

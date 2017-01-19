@@ -1,0 +1,43 @@
+/*
+ * reference.cpp
+ *
+ *  Created on: 2017年1月16日
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	// 注意构造函数参数这里要用引用类型的参数，用int类型的是起不到引用的效果的，并且也不会报错；
+	A(int x):a(x){ a = 400; cout << "A::A()" << x << endl; };
+	void set(int value){ a = value; cout << a << endl; };
+private:
+	int &a;
+
+};
+
+void func(int &c)
+{
+	c = 1000;
+}
+
+int main()
+{
+	int x = 20;
+	int y = 30;
+	int &d = x;
+	int &f = y;
+	d = f;
+	cout << d << endl;
+
+	int s = 10;
+	A a(s);
+	//func(s);
+	a.set(80);
+	cout << s << endl;
+
+	return 0;
+}
+

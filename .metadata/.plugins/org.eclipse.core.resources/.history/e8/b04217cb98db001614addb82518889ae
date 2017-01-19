@@ -1,0 +1,35 @@
+/*
+ * upcasting.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ16ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class Person
+{
+public:
+	Person(int h, int y):height(h),year(y){}
+private:
+	int height;
+	int year;
+};
+
+class Student:public Person
+{
+private:
+	int grade;
+};
+
+int main()
+{
+	Person p;
+	Student *s = &p;
+	Student &s1 = &p;
+
+	return 0;
+}
+
+
+

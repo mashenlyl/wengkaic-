@@ -1,0 +1,60 @@
+/*
+ * vitual.cpp
+ *
+ *  Created on: 2017年1月16日
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class Shape
+{
+public:
+	void move(){ cout << "Shape::move()" << endl;};
+	virtual void render(){ cout << "Shape::render()" << endl; };
+	void render(int a){ cout << "Shape::render(int)" << endl; }
+	virtual ~Shape(){};
+private:
+	int center;
+};
+
+class Rectangle:public Shape
+{
+public:
+	virtual void render(){ cout << "Rectangle::render()" << endl; };
+};
+
+class Ellipse:public Shape
+{
+public:
+	// 这里后面没有加上大括号，就只是在这里是声明，并没有定义这个构造函数
+	Ellipse(float maj, float minr){};
+	virtual void render(){ cout << "Ellipse::render()" << endl; };
+	virtual ~Ellipse(){};
+};
+
+class Circle:public Ellipse
+{
+public:
+	Circle(float radiums):Ellipse(radiums, radiums){};
+	virtual void render(){ cout << "Circle::render()" << endl; };
+};
+
+void render(Shape* p)
+{
+	p->render();
+	p->move();
+}
+int main()
+{
+	Ellipse ell(10,20);
+	ell.render();
+	Circle circ(13);
+	circ.render();
+	render(&ell);
+	render(&circ);
+
+	return 0;
+}
+
+

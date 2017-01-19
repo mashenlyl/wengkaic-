@@ -1,0 +1,55 @@
+/*
+ * reference.cpp
+ *
+ *  Created on: 2017年1月18日
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+int a;
+
+int &func(int t)
+{
+	a = t;
+	return a;
+}
+
+class A
+{
+public:
+	A():i(1){}
+	int i;
+};
+
+A f()
+{
+	A a;
+	return a;
+}
+
+int g()
+{
+	int a;
+	return a;
+}
+
+int main()
+{
+	A b;
+	b = f();
+	f().i = 10;
+	cout << f().i << endl;
+
+	int j = 0;
+	j = func(4);		// 等价于：j = a
+	func(5) = 3;		// 等价于：a = 3
+	cout << "a = " << a << endl;
+	cout << "j = " << j << endl;
+
+
+	return 0;
+}
+
+
+

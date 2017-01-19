@@ -1,0 +1,16 @@
+/*
+ * vitual.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ16ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	return 0;
+}
+
+

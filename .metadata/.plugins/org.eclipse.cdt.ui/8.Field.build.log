@@ -1,0 +1,7 @@
+20:28:18 **** Incremental Build of configuration Debug for project 8.Field ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o 8.Field.exe main.o 
+
+20:28:18 Build Finished (took 311ms)
+

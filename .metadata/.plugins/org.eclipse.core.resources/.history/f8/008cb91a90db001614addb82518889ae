@@ -1,0 +1,24 @@
+/*
+ * reference.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ16ÈÕ
+ *      Author: LYL
+ */
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+private:
+	int &a;
+
+};
+int main()
+{
+	A a;
+
+	return 0;
+}
+
+

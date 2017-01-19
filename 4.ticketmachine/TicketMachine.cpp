@@ -1,0 +1,44 @@
+/*
+ * TicketMachine.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ13ÈÕ
+ *      Author: LYL
+ */
+
+#include "TicketMachine.h"
+
+#include <iostream>
+using namespace std;
+
+TicketMachine::TicketMachine(): PRICE(2) {
+	// TODO Auto-generated constructor stub
+	balance = 0;
+	total = 0;
+}
+
+TicketMachine::~TicketMachine() {
+	// TODO Auto-generated destructor stub
+}
+
+void TicketMachine::showPrompt()
+{
+	cout << "give money" <<endl;
+}
+
+void TicketMachine::showBalance()
+{
+	cout << balance <<endl;
+}
+
+void TicketMachine::printTicket()
+{
+	cout << "Your Ticket" << endl;
+}
+
+void TicketMachine::getMoney(int money)
+{
+	balance += money;
+}
+
+
+

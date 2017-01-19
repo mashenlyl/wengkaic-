@@ -1,0 +1,42 @@
+/*
+ * new.cpp
+ *
+ *  Created on: 2017Äê1ÔÂ14ÈÕ
+ *      Author: LYL
+ */
+
+#include <iostream>
+using namespace std;
+
+class A
+{
+public:
+	A(int);
+	void f();
+	void print();
+	~A();
+private:
+	int i;
+};
+
+A::A(int v):i(v)
+{
+	cout << "A::A(), i = " << this->i << endl;
+}
+
+A::~A()
+{
+	cout << "A::~A(), i = " << this->i << endl;
+}
+
+int main()
+{
+	A *p = NULL;
+
+
+	delete p;
+
+	return 0;
+}
+
+
